@@ -1,0 +1,20 @@
+stages:
+    - "build"
+    - "test"
+
+sample_stage_1:
+    stage: build
+    tags:
+        - CI
+        - Devops
+    script:
+        - echo "Inside first job"
+
+sample_stage_2:
+    stage: test
+    tags:
+        - CI
+        - Devops
+    script:
+        - echo "Inside second job"
+
