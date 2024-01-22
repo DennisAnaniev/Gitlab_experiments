@@ -1,0 +1,12 @@
+stages:
+    - "build"
+
+my_build_job:
+    variables:
+        channel: Dennis
+    stage: build
+    tags:
+        - CI
+        - Devops
+    script:
+        - echo "Inside first job. Welcome to $channel"
